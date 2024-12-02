@@ -53,6 +53,21 @@ fun main() {
         else -> { println("Ningún día válido")
         }
     }
+
+    //Condicionales
+    var valueX=2
+    var valueY=8
+    if(valueX > valueY) {
+        if(valueX==3){
+            //ejecuta código
+        } else{
+            //ejecuta otro código
+        }
+    } else {
+        //Tercera posibilidad
+    }
+
+
     //Ejercicio 1
     fun sumTwoDigits(a:Int, b:Int):Int {
         val result = a + b
@@ -98,5 +113,6 @@ fun main() {
     }
     println("El volumen es: "+calculateVolume(5,12,33))
 
-    
+
+
 }
