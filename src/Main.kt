@@ -61,9 +61,13 @@ fun main() {
     println(sumTwoDigits(5,7))
     //Ejercicio 2
     fun multiplyTwoDigits(a:Int, b:Int):Int {
-        val result = a + b
+        val result = a * b
         return result
     }
     println(multiplyTwoDigits(5,7))
-
+    //Ejercicio 3
+    fun divideTwoDigits(a:Int, b:Int): Int? {
+        return if (b>0) a/b else null
+            }
+    println(divideTwoDigits(12,0))
 }
