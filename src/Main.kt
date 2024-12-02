@@ -53,7 +53,11 @@ fun main() {
         else -> { println("Ningún día válido")
         }
     }
-    
-
+    //Ejercicio 1
+    fun sumaDosNumeros(a:Int, b:Int):Int {
+        val result = a + b
+        return result
+    }
+    println(sumaDosNumeros(5,7))
 
 }
