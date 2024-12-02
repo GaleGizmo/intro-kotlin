@@ -113,6 +113,27 @@ fun main() {
     }
     println("El volumen es: "+calculateVolume(5,12,33))
 
+    fun returnXPrimeNumbers(x:Int): Any{
+        println(1)
+        var counter=1
+        var primeNumber:Int=2
+        while (counter<=x){
+            var isPrime=true
+            var toDivide:Int=primeNumber/2
+            while(isPrime && toDivide>1){
+                val check:Double = primeNumber.toDouble()/toDivide.toDouble()
+                if (check % 1==0.0) isPrime=false
+                else toDivide-=1
+            }
+            if (isPrime) {
+                println(primeNumber)
+                counter+=1
+            }
+            primeNumber+=1
 
+        }
+        return true
+    }
+    returnXPrimeNumbers(10)
 
 }
