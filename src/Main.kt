@@ -83,4 +83,12 @@ fun main() {
         return (won*100)/played
     }
     println("porcentaje de victorias: "+calculateWinPercentage(84,41)+"%")
+
+    //Ejercicio 6
+    fun returnBiggest (a:Int, b:Int): Any {
+         if (a>b) return ("el mayor es: " +a)
+        if (b>a) return ("el mayor es: "+b)
+        return "son iguales"
+    }
+    println("Resultado: "+returnBiggest(24, 33))
 }
