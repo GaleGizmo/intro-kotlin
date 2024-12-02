@@ -54,10 +54,16 @@ fun main() {
         }
     }
     //Ejercicio 1
-    fun sumaDosNumeros(a:Int, b:Int):Int {
+    fun sumTwoDigits(a:Int, b:Int):Int {
         val result = a + b
         return result
     }
-    println(sumaDosNumeros(5,7))
+    println(sumTwoDigits(5,7))
+    //Ejercicio 2
+    fun multiplyTwoDigits(a:Int, b:Int):Int {
+        val result = a + b
+        return result
+    }
+    println(multiplyTwoDigits(5,7))
 
 }
