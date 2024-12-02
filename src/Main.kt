@@ -91,4 +91,12 @@ fun main() {
         return "son iguales"
     }
     println("Resultado: "+returnBiggest(24, 33))
+
+    //Ejercicio 7
+    fun calculateVolume (long:Int, width: Int, height:Int): Int{
+        return long*width*height
+    }
+    println("El volumen es: "+calculateVolume(5,12,33))
+
+    
 }
