@@ -77,4 +77,10 @@ fun main() {
         return if (b>0) a/b else null
     }
     println(divideTwoIntDigits(12,7))
+
+    //Ejercicio 5
+    fun calculateWinPercentage (played:Int, won:Int): Any{
+        return (won*100)/played
+    }
+    println("porcentaje de victorias: "+calculateWinPercentage(84,41)+"%")
 }
