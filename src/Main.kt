@@ -141,15 +141,28 @@ fun main() {
 //    returnXPrimeNumbers(10)
 
     //Ejercicio concat strings
-    print("Ingresa string 1: ")
-    val string1 = readLine()
-    print ("Ingresa string 2: ")
-    val string2 = readLine()
+//    print("Ingresa string 1: ")
+//    val string1 = readLine()
+//    print ("Ingresa string 2: ")
+//    val string2 = readLine()
+//
+//    fun concatStrings(str1:String?, str2:String?):String{
+//        return str1+str2
+//    }
+//    println("Resultado: "+concatStrings(string1, string2))
 
-    fun concatStrings(str1:String?, str2:String?):String{
-        return str1+str2
+    //Ejercicio sustituir caracter
+    print("Ingresa frase: ")
+    val phrase= readLine().toString()
+    print ("Carácter a sustituir: ")
+    val chr1= readLine().toString()
+    print ("Nuevo carácter: ")
+    val chr2= readLine().toString()
+
+    fun replaceCharacter(phraseToEdit:String, oldchr:String, newchr:String):String {
+        return if (oldchr in phraseToEdit) phraseToEdit.replace(oldchr, newchr) else "Ese carácter no está en la frase"
     }
-    println("Resultado: "+concatStrings(string1, string2))
+    println("Resultado: "+replaceCharacter(phrase, chr1, chr2))
 
 
 }
