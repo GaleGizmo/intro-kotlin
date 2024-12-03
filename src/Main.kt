@@ -165,19 +165,28 @@ fun main() {
 //    println("Resultado: "+replaceCharacter(phrase, chr1, chr2))
 
     //Ejercicio sustituir si primero o último
-        print("Ingresa frase: ")
+//        print("Ingresa frase: ")
+//    val phrase= readlnOrNull().toString()
+//    print ("Carácter a sustituir: ")
+//    val char= readlnOrNull().toString()
+//
+//    fun replaceIfFirstOrLastChar(phraseToEdit:String, chr:String):String{
+//        val charToRemove=chr[0]
+//        return when {
+//            phraseToEdit.startsWith(charToRemove) -> phraseToEdit.substring(1)
+//            phraseToEdit.endsWith(charToRemove) -> phraseToEdit.dropLast(1)
+//            else -> "No es primer o último carácter"
+//        }
+//    }
+//    println("Resultado: "+replaceIfFirstOrLastChar(phrase, char))
+    print("Ingresa frase: ")
     val phrase= readlnOrNull().toString()
-    print ("Carácter a sustituir: ")
-    val char= readlnOrNull().toString()
-
-    fun replaceIfFirstOrLastChar(phraseToEdit:String, chr:String):String{
-        val charToRemove=chr[0]
-        return when {
-            phraseToEdit.startsWith(charToRemove) -> phraseToEdit.substring(1)
-            phraseToEdit.endsWith(charToRemove) -> phraseToEdit.dropLast(1)
-            else -> "No es primer o último carácter"
-        }
+    fun duplicateTwoFirstChars(phraseToEdit:String):String{
+        val twoFirst = phraseToEdit.substring(0,2)
+        return twoFirst+twoFirst
     }
-    println("Resultado: "+replaceIfFirstOrLastChar(phrase, char))
+    println("Resultado: "+duplicateTwoFirstChars(phrase))
+
+    
 }
 
