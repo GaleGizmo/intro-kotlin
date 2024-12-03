@@ -179,14 +179,23 @@ fun main() {
 //        }
 //    }
 //    println("Resultado: "+replaceIfFirstOrLastChar(phrase, char))
+    //Ejercicio duplica dos primeros caracteres
+//    print("Ingresa frase: ")
+//    val phrase= readlnOrNull().toString()
+//    fun duplicateTwoFirstChars(phraseToEdit:String):String{
+//        val twoFirst = phraseToEdit.substring(0,2)
+//        return twoFirst+twoFirst
+//    }
+//    println("Resultado: "+duplicateTwoFirstChars(phrase))
+
+//    Ejercicio comprueba dos primeros igual a dos últimos caracteres
     print("Ingresa frase: ")
     val phrase= readlnOrNull().toString()
-    fun duplicateTwoFirstChars(phraseToEdit:String):String{
-        val twoFirst = phraseToEdit.substring(0,2)
-        return twoFirst+twoFirst
+    fun checkTwoFirstSameTwoLast(phraseToCheck:String):Boolean{
+        val twoFirst = phraseToCheck.substring(0,2)
+        val twoLast = phraseToCheck.takeLast(2)
+        return twoFirst==twoLast
     }
-    println("Resultado: "+duplicateTwoFirstChars(phrase))
-
-    
+    println("Resultado: "+checkTwoFirstSameTwoLast(phrase))
 }
 
