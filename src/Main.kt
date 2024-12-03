@@ -152,18 +152,32 @@ fun main() {
 //    println("Resultado: "+concatStrings(string1, string2))
 
     //Ejercicio sustituir caracter
-    print("Ingresa frase: ")
-    val phrase= readLine().toString()
+//    print("Ingresa frase: ")
+//    val phrase= readLine().toString()
+//    print ("Carácter a sustituir: ")
+//    val chr1= readLine().toString()
+//    print ("Nuevo carácter: ")
+//    val chr2= readLine().toString()
+//
+//    fun replaceCharacter(phraseToEdit:String, oldchr:String, newchr:String):String {
+//        return if (oldchr in phraseToEdit) phraseToEdit.replace(oldchr, newchr) else "Ese carácter no está en la frase"
+//    }
+//    println("Resultado: "+replaceCharacter(phrase, chr1, chr2))
+
+    //Ejercicio sustituir si primero o último
+        print("Ingresa frase: ")
+    val phrase= readlnOrNull().toString()
     print ("Carácter a sustituir: ")
-    val chr1= readLine().toString()
-    print ("Nuevo carácter: ")
-    val chr2= readLine().toString()
+    val char= readlnOrNull().toString()
 
-    fun replaceCharacter(phraseToEdit:String, oldchr:String, newchr:String):String {
-        return if (oldchr in phraseToEdit) phraseToEdit.replace(oldchr, newchr) else "Ese carácter no está en la frase"
+    fun replaceIfFirstOrLastChar(phraseToEdit:String, chr:String):String{
+        val charToRemove=chr[0]
+        return when {
+            phraseToEdit.startsWith(charToRemove) -> phraseToEdit.substring(1)
+            phraseToEdit.endsWith(charToRemove) -> phraseToEdit.dropLast(1)
+            else -> "No es primer o último carácter"
+        }
     }
-    println("Resultado: "+replaceCharacter(phrase, chr1, chr2))
-
-
+    println("Resultado: "+replaceIfFirstOrLastChar(phrase, char))
 }
 
