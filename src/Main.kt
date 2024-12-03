@@ -1,3 +1,5 @@
+import java.util.*
+
 fun main() {
 //    //1. Tipos de datos
 //    // Enteros
@@ -189,13 +191,27 @@ fun main() {
 //    println("Resultado: "+duplicateTwoFirstChars(phrase))
 
 //    Ejercicio comprueba dos primeros igual a dos últimos caracteres
-    print("Ingresa frase: ")
-    val phrase= readlnOrNull().toString()
-    fun checkTwoFirstSameTwoLast(phraseToCheck:String):Boolean{
-        val twoFirst = phraseToCheck.substring(0,2)
-        val twoLast = phraseToCheck.takeLast(2)
-        return twoFirst==twoLast
+//    print("Ingresa frase: ")
+//    val phrase= readlnOrNull().toString()
+//    fun checkTwoFirstSameTwoLast(phraseToCheck:String):Boolean{
+//        val twoFirst = phraseToCheck.substring(0,2)
+//        val twoLast = phraseToCheck.takeLast(2)
+//        return twoFirst==twoLast
+//    }
+//    println("Resultado: "+checkTwoFirstSameTwoLast(phrase))
+
+    //Ejercicio compara dos strings
+    print("Ingresa frase 1: ")
+    val phras1= readlnOrNull().toString()
+    print ("Ingresa frase 2: ")
+    val phras2= readlnOrNull().toString()
+
+    fun compareStrings(str1:String, str2:String):Boolean{
+        val str1ToLower = str1.lowercase(Locale.getDefault())
+        val str2ToLower = str2.lowercase(Locale.getDefault())
+        return str1ToLower==str2ToLower
     }
-    println("Resultado: "+checkTwoFirstSameTwoLast(phrase))
+    println("resultado: "+compareStrings(phras1, phras2))
+
 }
 
