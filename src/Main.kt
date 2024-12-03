@@ -74,12 +74,15 @@ fun main() {
         return result
     }
     println(sumTwoDigits(5,7))
+
     //Ejercicio 2
     fun multiplyTwoDigits(a:Int, b:Int):Int {
         val result = a * b
         return result
     }
+
     println(multiplyTwoDigits(5,7))
+
     //Ejercicio 3
     fun divideTwoDigits(a:Int, b:Int): Any? {
         if (b <= 0) return null
@@ -87,6 +90,7 @@ fun main() {
         return if (result % 1 == 0.0) result.toInt() else result
             }
     println(divideTwoDigits(12,6))
+
     //Ejercicio 4
     fun divideTwoIntDigits(a:Int, b:Int): Int? {
         return if (b>0) a/b else null
