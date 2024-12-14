@@ -1,6 +1,6 @@
 package exercises
 
-fun exercise14() {
+fun compareTwoStringsCaseInsensitive() {
     print("Ingresa frase 1: ")
     val phras1 = readlnOrNull().toString()
     print("Ingresa frase 2: ")

@@ -1,6 +1,6 @@
 package exercises
 
-fun exercise10(){
+fun replaceOneCharInString(){
     print("Ingresa frase: ")
     val phrase= readlnOrNull().toString()
     print ("Carácter a sustituir: ")

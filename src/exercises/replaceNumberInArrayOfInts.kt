@@ -1,6 +1,6 @@
 package exercises
 
-fun exercise15(){
+fun replaceNumberInArrayOfInts(){
     print("Introduce los números para el array (separados por espacio): ")
     val arrayToEnter= readlnOrNull()
 

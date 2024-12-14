@@ -1,6 +1,6 @@
 package exercises
 
-fun exercise3() {
+fun divideTwoNumbers() {
     print("Primer número: ")
     val a = readlnOrNull()?.toDoubleOrNull()
     print("Segundo número: ")

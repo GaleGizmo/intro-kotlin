@@ -1,6 +1,6 @@
 package exercises
 
-fun exercise5(){
+fun calculateRateOfVictories(){
     print("Partidos jugados: ")
     val a = readlnOrNull()?.toIntOrNull()
     print("Partidos ganados: ")

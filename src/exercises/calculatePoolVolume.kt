@@ -1,6 +1,6 @@
 package exercises
 
-fun exercise7(){
+fun calculatePoolVolume(){
     print("Ancho: ")
     val poolWidth = readlnOrNull()?.toIntOrNull()
     print("Alto: ")

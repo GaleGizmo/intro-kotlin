@@ -1,9 +1,9 @@
 package exercises
 
-fun exercise11(){
+fun removeCharIfFirstOrLast(){
     print("Ingresa frase: ")
     val phrase= readlnOrNull()
-    print ("Carácter a sustituir: ")
+    print ("Carácter a eliminar: ")
     val char= readlnOrNull()
 
     fun deleteIfFirstOrLastChar(phraseToEdit: String, chr: String): String {
@@ -11,7 +11,7 @@ fun exercise11(){
         var editedPhrase:String=phraseToEdit
         if (phraseToEdit.startsWith(charToRemove)) editedPhrase=editedPhrase.substring(1)
         if  (phraseToEdit.endsWith(charToRemove)) editedPhrase=editedPhrase.dropLast(1)
-        return  if (phraseToEdit==editedPhrase) "El caracter no está en la frase " else editedPhrase
+        return  if (phraseToEdit==editedPhrase) "El carácter no está en el inicio ni el final de la frase." else editedPhrase
     }
 
     if (phrase!=null && char!=null && phrase!="" && char!="") {

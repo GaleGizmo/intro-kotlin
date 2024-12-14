@@ -1,6 +1,6 @@
 package exercises
 
-fun exercise17(){
+fun countRepetitionsOfNumberInArray(){
     print("Introduce los números para el array (separados por espacio): ")
     val stringToEnter= readlnOrNull()
 

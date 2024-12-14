@@ -1,6 +1,6 @@
 package exercises
 
-fun exercise9(){
+fun concatenateTwoStrings(){
     print("Ingresa string 1: ")
     val string1 = readlnOrNull()
     print ("Ingresa string 2: ")

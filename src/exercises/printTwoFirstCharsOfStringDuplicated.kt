@@ -1,6 +1,6 @@
 package exercises
 
-fun exercise12(){
+fun printTwoFirstCharsOfStringDuplicated(){
         print("Ingresa frase: ")
     val phrase= readlnOrNull().toString()
     fun duplicateTwoFirstChars(phraseToEdit:String):String{

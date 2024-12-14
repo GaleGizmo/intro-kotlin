@@ -1,6 +1,6 @@
 package exercises
 
-fun exercise8(){
+fun printXPrimNumbers(){
     println("Cuantos números primos quieres mostrar: ")
     val numberOfPrimes= readlnOrNull()?.toInt()
     if (numberOfPrimes==null){

@@ -1,7 +1,7 @@
 package exercises
 //Busca primer número hasta 1000000 que no está en array
 
-fun exercise20() {
+fun checkFirstNumberUntilOneMillionNotInArray() {
     print("Introduce los números para el array (separados por espacio): ")
     val stringToEnter = readlnOrNull()
     if (stringToEnter == null) {

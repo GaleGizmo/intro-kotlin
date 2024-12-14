@@ -1,7 +1,7 @@
 package exercises
 
-//ordena array de números
-fun exercise18(){
+
+fun sortArrayOfNumbers(){
     print("Introduce los números para el array (separados por espacio): ")
     val stringToEnter= readlnOrNull()
 

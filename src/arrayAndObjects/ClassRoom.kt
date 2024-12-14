@@ -1,4 +1,8 @@
-package ArrayAndObjects
+package arrayAndObjects
 
-class ClassRoom {
+class ClassRoom(
+    val id: Int,
+    val name: String,
+    var students: ArrayList<Student>
+) {
 }

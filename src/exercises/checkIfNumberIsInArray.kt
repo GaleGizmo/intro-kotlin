@@ -1,6 +1,6 @@
 package exercises
 
-fun exercise16() {
+fun checkIfNumberIsInArray() {
     print("Introduce los números para el array (separados por espacio): ")
     val arrayToEnter= readlnOrNull()
 

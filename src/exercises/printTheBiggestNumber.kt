@@ -1,6 +1,6 @@
 package exercises
 
-fun exercise6() {
+fun printTheBiggestNumber() {
     print("Primer número: ")
     val a = readlnOrNull()?.toIntOrNull()
     print("Segundo número: ")
@@ -8,7 +8,7 @@ fun exercise6() {
     fun returnBiggest (a:Int, b:Int) {
       if (a==b) print ("son iguales") else {
           print("El mayor es: ")
-          if (a > b) print (a) else print (b)
+          if (a > b) println (a) else println (b)
       }
     }
     if (a != null && b != null) {

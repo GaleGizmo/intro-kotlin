@@ -1,6 +1,6 @@
 package exercises
-//añade un string a un array de strings
-fun exercise19() {
+
+fun addStringToArrayOfStrings() {
     print("Introduce los strings para el array (separados por comas): ")
     val stringOfStringsToEnter= readlnOrNull()
     print("Introduce el string a añadir: ")

@@ -1,6 +1,6 @@
 package exercises
 
-fun exercise13(){
+fun checkIfTwoFirstCharsSameAsTwoLast(){
     print("Ingresa frase: ")
     val phrase = readlnOrNull().toString()
 
