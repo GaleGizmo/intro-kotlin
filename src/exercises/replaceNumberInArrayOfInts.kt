@@ -19,7 +19,7 @@ fun exercise15(){
 
     fun replaceElementOfArray(stringOfNumbers: String?, newElement: Int, placeInArray: Int) {
         val listOfNumbers = stringOfNumbers?.split(" ")?.mapNotNull { element->element.toIntOrNull() }
-        if (listOfNumbers == null || listOfNumbers.isEmpty()) {
+        if (listOfNumbers.isNullOrEmpty()) {
             println("El array no es válido o está vacío.")
             return
         }

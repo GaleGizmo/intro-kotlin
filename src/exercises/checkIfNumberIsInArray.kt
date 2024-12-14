@@ -10,7 +10,7 @@ fun exercise16() {
         println("El número no es válido.")
         return
     }
-    fun buscaNumeroEnArray(stringOfNumbers: String?, numberToSearch: Int) {
+    fun searchNumberInArray(stringOfNumbers: String?, numberToSearch: Int) {
         val arrayOfNumbers = stringOfNumbers?.split(" ")?.mapNotNull { element->element.toIntOrNull() }?.toIntArray()
         if (arrayOfNumbers == null || arrayOfNumbers.isEmpty()) {
             println("El array no es válido o está vacío.")
@@ -18,5 +18,5 @@ fun exercise16() {
         }
         if (numberToSearch in arrayOfNumbers) println("$numberToSearch está en el array") else println("$numberToSearch no está en el array")
     }
-    buscaNumeroEnArray(arrayToEnter, numberToEnter)
+    searchNumberInArray(arrayToEnter, numberToEnter)
 }

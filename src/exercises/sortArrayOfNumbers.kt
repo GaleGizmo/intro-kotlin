@@ -1,24 +1,25 @@
 package exercises
 
+//ordena array de números
 fun exercise18(){
     print("Introduce los números para el array (separados por espacio): ")
     val stringToEnter= readlnOrNull()
 
     fun sortNumbers(stringOfNumbers:String?){
         val arrayOfNumbers = stringOfNumbers?.split(" ")?.mapNotNull { element->element.toIntOrNull() }?.toIntArray()
-        if (arrayOfNumbers!=null) {
-            val sizeOfArray = arrayOfNumbers.size
+        arrayOfNumbers?.let { numbers ->
+            val sizeOfArray = numbers.size
             for (i in 0..<sizeOfArray - 1) {
                 for (j in 0..<sizeOfArray - i - 1) {
-                    if (arrayOfNumbers[j] > arrayOfNumbers[j + 1]) {
-
-                        val temp = arrayOfNumbers[j]
-                        arrayOfNumbers[j] = arrayOfNumbers[j + 1]
-                        arrayOfNumbers[j + 1] = temp
+                    if (numbers[j] > numbers[j + 1]) {
+                        val temp = numbers[j]
+                        numbers[j] = numbers[j + 1]
+                        numbers[j + 1] = temp
                     }
                 }
             }
         }
+
         println(arrayOfNumbers?.joinToString(", "))
     }
 sortNumbers(stringToEnter)

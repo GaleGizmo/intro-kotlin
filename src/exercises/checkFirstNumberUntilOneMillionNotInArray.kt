@@ -1,4 +1,5 @@
 package exercises
+//Busca primer número hasta 1000000 que no está en array
 
 fun exercise20() {
     print("Introduce los números para el array (separados por espacio): ")
@@ -9,6 +10,7 @@ fun exercise20() {
     }
 
     fun searchFirstNumberNotInArray(stringOfNumbers: String) {
+        //convierte el string en array de integers
         val arrayOfNumbers = stringOfNumbers.split(" ").mapNotNull { element -> element.toIntOrNull() }.toIntArray()
         for (j in 1..1000000) {
             if (j !in arrayOfNumbers) {

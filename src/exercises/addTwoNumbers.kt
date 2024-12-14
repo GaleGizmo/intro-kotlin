@@ -1,5 +1,5 @@
 package exercises
-fun exercise1() {
+fun addTwoNumbers() {
     print("Primer número: ")
     val a = readlnOrNull()?.toIntOrNull()
     print("Segundo número: ")
